@@ -1,29 +1,29 @@
 import styled from "styled-components";
 
 export const Image = styled.img`
-  top: ${({ top }) => top};
-  left: ${({ left }) => left};
-  width: ${({ width }) => width || "auto"};
-  height: ${({ height }) => height || "auto"};
+  top: ${({ top }: { top: string }) => top};
+  left: ${({ left }: { left: string }) => left};
+  width: ${({ width }: { width: string }) => width || "auto"};
+  height: ${({ height }: { height: string }) => height || "auto"};
 `;
 
 export const CustomItem = styled.div`
-  top: ${({ top }) => top};
-  left: ${({ left }) => left};
+  top: ${({ top }: { top: string }) => top};
+  left: ${({ left }: { left: string }) => left};
 `;
 
 export const StyledFLoatingIconsContainer = styled.div`
   display: flex;
 
   > div {
-    ${({ imagePath, color }) =>
+    ${({ imagePath, color }: { imagePath: string, color: string }) =>
       imagePath
         ? `background-image: url(${imagePath})`
         : `background-color: ${color || "transparent"}`};
     background-repeat: no-repeat;
     background-size: contain;
-    width: ${({ width }) => width || "100%"};
-    height: ${({ height }) => height || "400px"};
+    width: ${({ width }: { width: string }) => width || "100%"};
+    height: ${({ height }: { height: string }) => height || "400px"};
   }
 
   .floating,
@@ -32,7 +32,7 @@ export const StyledFLoatingIconsContainer = styled.div`
     animation-timing-function: ease-in-out;
     position: absolute;
     animation-name: floating;
-    animation-duration: ${({ animationDuration }) => animationDuration ?? "3s"};
+    animation-duration: ${({ animationDuration }: { animationDuration: string }) => animationDuration ?? "3s"};
 
     @keyframes floating {
       0% {
