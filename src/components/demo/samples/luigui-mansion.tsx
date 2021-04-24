@@ -1,13 +1,13 @@
-import Boo from "../assets/Boo.png";
-import Peepa from "../assets/peepa.png";
-import CharGhost from "../assets/char-ghost.png";
-import LuiguiBg from "../assets/luigui-scared.jpg";
+const Boo = require("../assets/Boo.png");
+const Peepa = require("../assets/peepa.png");
+const CharGhost = require("../assets/char-ghost.png");
+const LuiguiBg = require("../assets/luigui-scared.jpg");
 
 /**
  * Boo const
  */
 const BooItem = {
-  src: Boo,
+  src: Boo.default,
   size: { width: "40px", height: "40px" },
 };
 
@@ -16,7 +16,7 @@ const BooItem = {
  */
 export const LuiguiMansionTemplate = {
   backgroundContent: {
-    imagePath: LuiguiBg,
+    imagePath: LuiguiBg.default,
   },
   items: [
     {
@@ -35,7 +35,7 @@ export const LuiguiMansionTemplate = {
     },
     {
       id: "boo3",
-      src: Peepa,
+      src: Peepa.default,
       size: { width: "40px", height: "40px" },
       position: { x: "250px", y: "100px" },
       altText: "Boo 3",
@@ -60,7 +60,7 @@ export const LuiguiMansionTemplate = {
     },
     {
       id: "boo7",
-      src: CharGhost,
+      src: CharGhost.default,
       size: { width: "40px", height: "40px" },
       position: { x: "250px", y: "50px" },
       altText: "Boo 7",

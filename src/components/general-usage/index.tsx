@@ -1,7 +1,7 @@
-import ImageOne from "../assets/colors.svg";
-import ImageTwo from "../assets/code-brackets.svg";
-import ImageThree from "../assets/comments.svg";
-import LaptopBg from "../assets/laptop.png";
+const ImageOne = require("../assets/colors.svg");
+const ImageTwo = require("../assets/code-brackets.svg");
+const ImageThree = require("../assets/comments.svg");
+const LaptopBg = require("../assets/laptop.png");
 
 export const WithBackgroundTemplate = {
   backgroundContent: {
@@ -10,19 +10,19 @@ export const WithBackgroundTemplate = {
   items: [
     {
       id: "img1",
-      src: ImageOne,
+      src: ImageOne.default,
       position: { x: "200px", y: "140px" },
       altText: "Image One",
     },
     {
       id: "img2",
-      src: ImageTwo,
+      src: ImageTwo.default,
       position: { x: "260px", y: "120px" },
       altText: "Image Two",
     },
     {
       id: "img3",
-      src: ImageThree,
+      src: ImageThree.default,
       position: { x: "320px", y: "100px" },
       altText: "Image Three",
     },
@@ -33,19 +33,19 @@ export const WithoutBackgroundTemplate = {
   items: [
     {
       id: "img1",
-      src: ImageOne,
+      src: ImageOne.default,
       position: { x: "200px", y: "200px" },
       altText: "Image One",
     },
     {
       id: "img2",
-      src: ImageTwo,
+      src: ImageTwo.default,
       position: { x: "280px", y: "200px" },
       altText: "Image Two",
     },
     {
       id: "img3",
-      src: ImageThree,
+      src: ImageThree.default,
       position: { x: "360px", y: "200px" },
       altText: "Image Three",
     },
@@ -59,19 +59,19 @@ export const SolidBackgroundTemplate = {
   items: [
     {
       id: "img1",
-      src: ImageOne,
+      src: ImageOne.default,
       position: { x: "200px", y: "200px" },
       altText: "Image One",
     },
     {
       id: "img2",
-      src: ImageTwo,
+      src: ImageTwo.default,
       position: { x: "280px", y: "200px" },
       altText: "Image Two",
     },
     {
       id: "img3",
-      src: ImageThree,
+      src: ImageThree.default,
       position: { x: "360px", y: "200px" },
       altText: "Image Three",
     },
@@ -85,7 +85,7 @@ export const CustomItemTemplate = {
   items: [
     {
       id: "img1",
-      src: ImageOne,
+      src: ImageOne.default,
       position: { x: "200px", y: "200px" },
       altText: "Image One",
     },
@@ -104,7 +104,7 @@ export const CustomItemTemplate = {
     },
     {
       id: "img3",
-      src: ImageThree,
+      src: ImageThree.default,
       position: { x: "360px", y: "200px" },
       altText: "Image Three",
     },
