@@ -5,7 +5,7 @@ const LaptopBg = require("../assets/laptop.png");
 
 export const WithBackgroundTemplate = {
   backgroundContent: {
-    imagePath: LaptopBg,
+    imagePath: LaptopBg.default,
   },
   items: [
     {
