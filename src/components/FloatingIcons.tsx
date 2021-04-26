@@ -105,5 +105,5 @@ export const FloatingIcons = (props: IFloatingIconsProps) => {
 
 FloatingIcons.defaultProps = {
   backgroundContent: { imagePath: undefined, color: "transparent" },
-  sizeWrapper: undefined,
+  sizeWrapper: { width: "100%", height: "400px" },
 };

@@ -24,14 +24,14 @@ export const LuiguiMansionTemplate = {
       ...BooItem,
       altText: "Boo 1",
       position: { x: "120px", y: "100px" },
-      animationDuration: "1s",
+      animationDuration: "2s",
     },
     {
       id: "boo2",
       ...BooItem,
       altText: "Boo 2",
       position: { x: "180px", y: "100px" },
-      animationDuration: "1s",
+      animationDuration: "2s",
     },
     {
       id: "boo3",

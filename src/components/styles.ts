@@ -5,6 +5,11 @@ export const Image = styled.img`
   left: ${({ left }: { left: string }) => left};
   width: ${({ width }: { width: string }) => width || "auto"};
   height: ${({ height }: { height: string }) => height || "auto"};
+  animation-duration: ${({
+    animationDuration,
+  }: {
+    animationDuration: string;
+  }) => animationDuration ?? "3s"};
 `;
 
 export const CustomItem = styled.div`
@@ -16,14 +21,14 @@ export const StyledFLoatingIconsContainer = styled.div`
   display: flex;
 
   > div {
-    ${({ imagePath, color }: { imagePath: string, color: string }) =>
+    ${({ imagePath, color }: { imagePath: string; color: string }) =>
       imagePath
         ? `background-image: url(${imagePath})`
         : `background-color: ${color || "transparent"}`};
     background-repeat: no-repeat;
     background-size: contain;
-    width: ${({ width }: { width: string }) => width || "100%"};
-    height: ${({ height }: { height: string }) => height || "400px"};
+    width: ${({ width }: { width: string }) => width};
+    height: ${({ height }: { height: string }) => height};
   }
 
   .floating,
@@ -32,7 +37,6 @@ export const StyledFLoatingIconsContainer = styled.div`
     animation-timing-function: ease-in-out;
     position: absolute;
     animation-name: floating;
-    animation-duration: ${({ animationDuration }: { animationDuration: string }) => animationDuration ?? "3s"};
 
     @keyframes floating {
       0% {
