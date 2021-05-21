@@ -2,6 +2,10 @@
 
 > A React component that allows you to add N floating items to a container. It is Full configurable. Container, items, floating effect, etc. Find out props below.
 
+```tsx
+I do NOT own the images used for the "Luigi's Mansion" demo. 
+Its purpose is just to show one of the use cases of this component.
+```
 <div align="center">
   <img src="https://github.com/mesparza942/react-floating-icons/blob/main/src/assets/react-floating-icons-luigui-mansion.gif"/>
 </div>
