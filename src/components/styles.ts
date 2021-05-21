@@ -15,6 +15,11 @@ export const Image = styled.img`
 export const CustomItem = styled.div`
   top: ${({ top }: { top: string }) => top};
   left: ${({ left }: { left: string }) => left};
+  animation-duration: ${({
+    animationDuration,
+  }: {
+    animationDuration: string;
+  }) => animationDuration ?? "3s"};
 `;
 
 export const StyledFLoatingIconsContainer = styled.div`

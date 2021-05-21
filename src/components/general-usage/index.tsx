@@ -1,29 +1,29 @@
 const ImageOne = require("../assets/colors.svg");
 const ImageTwo = require("../assets/code-brackets.svg");
 const ImageThree = require("../assets/comments.svg");
-const LaptopBg = require("../assets/laptop.png");
+const ComputerBg = require("../assets/transfer-icon.svg");
 
 export const WithBackgroundTemplate = {
   backgroundContent: {
-    imagePath: LaptopBg.default,
+    imagePath: ComputerBg.default,
   },
   items: [
     {
       id: "img1",
       src: ImageOne.default,
-      position: { x: "200px", y: "140px" },
+      position: { x: "70px", y: "40px" },
       altText: "Image One",
     },
     {
       id: "img2",
       src: ImageTwo.default,
-      position: { x: "260px", y: "120px" },
+      position: { x: "360px", y: "120px" },
       altText: "Image Two",
     },
     {
       id: "img3",
       src: ImageThree.default,
-      position: { x: "320px", y: "100px" },
+      position: { x: "150px", y: "100px" },
       altText: "Image Three",
     },
   ],

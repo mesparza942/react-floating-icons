@@ -78,6 +78,7 @@ export const FloatingIcons = (props: IFloatingIconsProps) => {
                     className={item.className}
                     top={item.position.y}
                     left={item.position.x}
+                    animationDuration={item.animationDuration}
                   >
                     {item.content}
                   </CustomItem>

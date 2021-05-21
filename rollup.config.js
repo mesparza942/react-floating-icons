@@ -28,6 +28,7 @@ const settings = [
       resolve(),
       terser(),
     ],
+    external: ["styled-components"],
   },
 ];
 

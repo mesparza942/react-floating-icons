@@ -1,3 +1,7 @@
+/**
+ * I do NOT own the images used for the "Luigui's Mansion" demo. 
+ * They are just to show the use cases of this component.
+ */
 const Boo = require("../assets/Boo.png");
 const Peepa = require("../assets/peepa.png");
 const CharGhost = require("../assets/char-ghost.png");
